@@ -1,10 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,15 +23,26 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+small {
+  border: 1px solid lightgray;
+  padding: 0.2rem;
+  border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+small:hover {
+  transition: 0.1s ease-in-out;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  gap: 0.4rem;
 }
